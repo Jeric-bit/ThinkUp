@@ -1,0 +1,66 @@
+/*
+ * ThinkUp - CSS Variables
+ * Centralized design tokens for consistent styling
+ */
+
+:root {
+  /* ===== Color Palette ===== */
+  --color-light-blue-bg: #e4f7fb;
+  --color-light-azure: #caf0f8;
+  --color-teal-primary: #218ca6;
+  --color-dark-navy: #023047;
+  --color-yellow: #ffb703;
+  --color-yellow-bright: #ffde59;
+  --color-light-yellow: #fffbd5;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-border: #cccccc;
+  --color-gray-text: #4a5568;
+  --color-error: #b00020;
+
+  /* ===== Theme Colors (Light Mode) ===== */
+  --ink: #000000;
+  --bg: #caf0f8;
+  --dark: #023047;
+  --side: #e4f7fb;
+  --sideHover: #caf0f8;
+  --sideActive: #caf0f8;
+  --divider: #218ca6;
+  --accent: #1b282c;
+
+  /* ===== Layout ===== */
+  --sideW: 72px;
+  --contentPad: 28px;
+  --radius: 20px;
+
+  /* ===== Typography ===== */
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+
+  /* ===== Shadows ===== */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  /* ===== Transitions ===== */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* ===== Dark Mode Variables ===== */
+body.dark {
+  --bg: #023047;
+  --ink: #E9F8FF;
+  --side: #e4f7fb;
+  --sideHover: #d6eff5;
+  --sideActive: #023047;
+  --divider: #218ca6;
+  --accent: #1b282c;
+  --dark: #E9F8FF;
+}
+
+/* Sidebar expands when nav is open */
+body.nav-open {
+  --sideW: 220px;
+}
